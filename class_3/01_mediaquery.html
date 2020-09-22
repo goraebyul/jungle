@@ -20,11 +20,29 @@
             background:aquamarine;
           }
         } */
-          @media all and (min-width:500px) and (max-width:1000px){
+          /* @media all and (min-width:500px) and (max-width:1000px){
             .media{
               height:300px;
               background:blueviolet;
+            } */
+            /*pc영역*/
+          .media{
+            width:1200px;
+            margin:0 auto;
+            height:300px;
+            background:coral;
+          }
+          /*태블릿 영역*/
+          @media all and (max-width:1024px){
+            .media{
+            width:auto;/*블럭요소 넓이 값 초기화*/
+            background:red;
+          }
+          @media all and (max-width:768px){
+            .media {
+              background: gray;
             }
+          }
           }
 		</style>
   </head>
