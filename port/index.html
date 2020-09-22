@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/main_exam.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/main_exam.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/jejuair_favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/dropdown.js"></script>
-    <script type="text/javascript" src="js/moblle_menu.js"></script>
+    <!-- <script type="text/javascript" src="js/dropdown.js"></script> -->
+    <!-- <script type="text/javascript" src="js/moblle_menu copy.js"></script> -->
     <title>제주항공리디자인</title>
 </head>
 <body>
@@ -46,132 +47,182 @@
                 </div>
             </div>
         </nav>
-        <nav id="mainMenu_bar">
+        <nav id="mainMenu_bg">
             <div class="wrap">
                 <ul class="mainMenu">
                     <li>
                         <a href="#">항공권예매</a>
-                        <div id="subMenu_box">
-                            <div class="wrap">
-                                <div class="subMenu">
-                                    <h3><a href="#">항공권예매</a></h3>
-                                    <ul>    
+                        <ul class="subMenu_box">
+                                <li>
+                                    <h3 class="accordion"><a href="#">항공권예매</a></h3>
+                                    <ul class="subMenu panel">    
                                         <li><a href="#">최저운임항공권</a></li>
                                         <li><a href="#">서울출발항공권</a></li>
                                         <li><a href="#">부산출발항공권</a></li>
                                         <li><a href="#">제주출발항공권</a></li>
                                     </ul>
-                                </div>
-                                <div class="subMenu">
-                                    <h3><a href="#">운항일정</a></h3>
-                                    <ul>
+                                </li>
+                                <li>
+                                    <h3 class="accordion"><a href="#">운항일정</a></h3>
+                                    <ul class="subMenu panel">
                                         <li><a href="#">운항스케줄</a></li>
                                         <li><a href="#">출발/도착 조회</a></li>
                                     </ul>
-                                </div>
-                                <div class="subMenu">
-                                    <h3><a href="#">운임안내</a></h3>
-                                    <ul>
+                                </li>
+                                <li>
+                                    <h3 class="accordion"><a href="#">운임안내</a></h3>
+                                    <ul class="subMenu panel">
                                         <li><a href="#">국제선운임</a></li>
                                         <li><a href="#">국내선운임</a></li>
-                                    </ul>
-                                </div>
-                                <div class="subMenu">
-                                    <h3><a href="#">단체예약신청</a></h3>
-                                    <ul>
+                                    </ul>    
+                                </li>
+                                <li>
+                                    <h3 class="accordion"><a href="#">단체예약신청</a></h3>
+                                    <ul class="subMenu panel">
                                         <li><a href="#">단체예약신청</a></li>
                                         <li><a href="#">단체예약신청</a></li>
                                         <li><a href="#">민항공후급증 예약신청</a></li>
                                     </ul>
-                                </div>
-                                <div class="subMenu">
+                                </li>
+                                <li>
                                     <h3><a href="#">모바일 탑승권</a></h3>
-                                </div>
-                            </div>
-                        </div>
+                                </li>
+                        </ul>
                     </li>
-                    <li><a>서비스안내</a>
-                        <!-- <div id="subMenu_box">
-                            <div class="wrap">
-                                <div class="subMenu">
-                                    <h3><a href="#">NEW CLASS</a></h3>
-                                    <h3><a href="#">JJ ROUNGE</a></h3>
-                                </div>
-                                <div class="subMenu">
-                                    <h3><a href="#">예약안내</a></h3>
-                                    <ul>
-                                        <li><a href="#">항공권예매</a></li>
-                                        <li><a href="#">항공권환불</a></li>
-                                    </ul>
-                                </div>
-                                <div class="subMenu">
-                                    <h3><a href="#">기내서비스</a></h3>
-                                    <ul>
-                                        <li><a href="#">Air cafe</a></li>
-                                        <li><a href="#">기내면세품판매</a></li>
-                                    </ul>
-                                </div>
-                                <div class="subMenu">
-                                    <h3><a href="#">부가서비스</a></h3>
-                                    <ul>
-                                        <li><a href="#">사전수하물구매</a></li>
-                                        <li><a href="#">사전좌석구매</a></li>
-                                        <li><a href="#">사전기내식주문</a></li>
-                                        <li><a href="#">프리패스</a></li>
-                                        <li><a href="#">JJ라운지이용권</a></li>
-                                        <li><a href="#">J PassN</a></li>
-                                        <li><a href="#">스포츠멤버십</a></li>
-                                        <li><a href="#">옆 좌석 구매</a></li>
-                                        <li><a href="#">기타 유료 아이템</a></li>
-                                    </ul>
-                                </div>
-                                <div class="subMenu">
-                                    <h3><a href="#">공항서비스</a></h3>
-                                    <ul>
-                                        <li><a href="#">탑승수속안내</a></li>
-                                        <li><a href="#">모바일탑승권</a></li>
-                                        <li><a href="#">수하물</a></li>
-                                        <li><a href="#">제주항공 카운터</a></li>
-                                        <li><a href="#">도움이 필요한 고객</a></li>
-                                        <li><a href="#">기내 유실물 조회</a></li>
-                                </div>
-                                <div class="subMenu">
-                                    <h3><a href="#">회원혜택존</a></h3>
-                                    <ul>
-                                        <li><a href="#">쿠폰혜택N</a></li>
-                                        <li><a href="#">쿠폰안내</a></li>
-                                        <li><a href="#">국내선스탬프 랠리</a></li>
-                                        <li><a href="#">일본 스탬프 랠리</a></li>
-                                        <li><a href="#">지방발 스탬프 랠리</a></li>
-                                        <li><a href="#">제휴혜택</a></li>
-                                        <li><a href="#">카드 및 환전 혜택</a></li>
-                                </div>
-                            </div>
-                        </div> -->
+                    <li>
+                        <a href="#">서비스안내</a>
+                        <ul id="box-size2" class="subMenu_box">
+                            <li class="subMenu">
+                                <h3 class="accordion"><a href="#">예약안내</a></h3>
+                                <ul class="subMenu panel">
+                                    <li><a href="#">항공권예매</a></li>
+                                    <li><a href="#">항공권환불</a></li>
+                                </ul>
+                            </li>
+                            <li class="subMenu">
+                                <h3 class="accordion"><a href="#">예약안내</a></h3>
+                                <ul class="subMenu panel">
+                                    <li><a href="#">항공권예매</a></li>
+                                    <li><a href="#">항공권환불</a></li>
+                                </ul>
+                            </li>
+                            <li class="subMenu">
+                                <h3 class="accordion"><a href="#">기내서비스</a></h3>
+                                <ul class="subMenu panel">
+                                    <li><a href="#">Air cafe</a></li>
+                                    <li><a href="#">기내면세품판매</a></li>
+                                </ul>
+                            </li>
+                            <li class="subMenu">
+                                <h3 class="accordion"><a href="#">부가서비스</a></h3>
+                                <ul class="subMenu panel">
+                                    <li><a href="#">사전수하물구매</a></li>
+                                    <li><a href="#">사전좌석구매</a></li>
+                                    <li><a href="#">사전기내식주문</a></li>
+                                    <li><a href="#">프리패스</a></li>
+                                    <li><a href="#">JJ라운지이용권</a></li>
+                                    <li><a href="#">J PassN</a></li>
+                                    <li><a href="#">스포츠멤버십</a></li>
+                                    <li><a href="#">옆 좌석 구매</a></li>
+                                    <li><a href="#">기타 유료 아이템</a></li>
+                                </ul>
+                            </li>
+                            <li class="subMenu">
+                                <h3 class="accordion"><a href="#">공항서비스</a></h3>
+                                <ul class="subMenu panel">
+                                    <li><a href="#">탑승수속안내</a></li>
+                                    <li><a href="#">모바일탑승권</a></li>
+                                    <li><a href="#">수하물</a></li>
+                                    <li><a href="#">제주항공 카운터</a></li>
+                                    <li><a href="#">도움이 필요한 고객</a></li>
+                                    <li><a href="#">기내 유실물 조회</a></li>
+                                </ul>
+                            </li>
+                            <li class="subMenu">
+                                <h3 class="accordion"><a href="#">회원혜택존</a></h3>
+                                <ul class="subMenu panel">
+                                    <li><a href="#">쿠폰혜택N</a></li>
+                                    <li><a href="#">쿠폰안내</a></li>
+                                    <li><a href="#">국내선스탬프 랠리</a></li>
+                                    <li><a href="#">일본 스탬프 랠리</a></li>
+                                    <li><a href="#">지방발 스탬프 랠리</a></li>
+                                    <li><a href="#">제휴혜택</a></li>
+                                    <li><a href="#">카드 및 환전 혜택</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
-                    <li><a>이벤트새소식</a></li>
+                    <li>
+                        <a href="#">이벤트/새소식</a>
+                        <ul id="box-size3" class="subMenu_box">
+                            <li>
+                                <h3 class="accordion"><a href="#">JJ여정클럽</a></h3>
+                            </li>
+                            <li>
+                                <h3 class="accordion"><a href="#">조이버의 여행가중계</a></h3>
+                            </li>
+                            <li>
+                                <h3 class="accordion"><a href="#">이벤트</a></h3>
+                                <ul class="subMenu panel">
+                                    <li><a href="#">진행중인 이벤트</a></li>
+                                    <li><a href="#">종료된 이벤트</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="accordion"><a href="#">새소식</a></h3>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a>여행상품</a>
-                        <!-- <div id="subMenu_box">
-                            <div class="wrap smallMenu_wid">
-                                <div class="subMenu">
-                                    <h3><a href="#">호텔</a></h3>
-                                </div>
-                                <div class="subMenu">
-                                    <h3><a href="#">렌터카</a></h3>
-                                </div>
-                                <div class="subMenu">
-                                    <h3><a href="#">제휴상품</a></h3>
-                                    <ul>
-                                        <li><a href="#">여행자 보험</a></li>
-                                        <li><a href="#">포켓와이파이</a></li>
-                                        <li><a href="#">외투/수하물 보관</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> -->
+                        <ul id="box-size4" class="subMenu_box">
+                            <li>
+                                <h3 class="accordion"><a href="#">호텔</a></h3>
+                            </li>
+                            <li>
+                                <h3 class="accordion"><a href="#">렌터카</a></h3>
+                            </li>
+                            <li>
+                                <h3 class="accordion"><a href="#">제휴상품</a></h3>
+                                <ul class="subMenu panel">
+                                    <li><a href="#">여행자 보험</a></li>
+                                    <li><a href="#">포켓와이파이</a></li>
+                                    <li><a href="#">외투/수하물 보관</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
-                    <li><a>리프레시포인트</a></li>
-                    <li><a>마이페이지</a></li>
+                    <li><a href="#">리프레시포인트</a>
+                        <ul id="box-size5" class="subMenu_box">
+                            <li>
+                                <h3 class="accordion"><a href="#">리프레시포인트</a></h3>
+                                <ul class="subMenu panel">
+                                    <li><a href="#">소 개</a></li>
+                                    <li><a href="#">회원등급</a></li>
+                                    <li><a href="#">포인트적립</a></li>
+                                    <li><a href="#">포인트사용</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href="#">포인트내역조회</a></h3>
+                                <h3><a href="#">포인트구매</a></h3>
+                                <h3><a href="#">포인트선물</a></h3>
+                                <h3><a href="#">포인트양도</a></h3>
+                                <h3><a href="#">제휴포인트</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">마이페이지</a>
+                        <ul id="box-size6" class="subMenu_box">
+                            <li>
+                                <h3><a href="#">나의 예약<br>조회/변경/취소</a></h3>
+                                <h3><a href="#">나의 포인트</a></h3>
+                                <h3><a href="#">나의 쿠폰</a></h3>
+                                <h3><a href="#">나의 JJ라운지이용권</a></h3>
+                                <h3><a href="#">나의 JJ패스</a></h3>
+                                <h3><a href="#">나의 정보수정</a></h3>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
