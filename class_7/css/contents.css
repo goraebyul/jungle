@@ -4,6 +4,7 @@ width:300px;
 padding:10px;
 font-size:13px;
 color:#333;
+box-sizing:border-box;
 }
 /*채팅창*/
 .chat_area{
@@ -15,7 +16,13 @@ overflow-y: auto; /*내용이 적었을때는 scroll이 없음 scroll은 계속*
 }
 /*메시지*/
 .chat_area .item{
-
+opacity:0;
+transform: translateX(10px);
+transition: all 0.3s ease-out;
+}
+.chat_area .item.on{
+opacity:1;
+transform: translateX(0px) !important;
 }
 .chat_area .item+.item{
 margin-top:15px;
@@ -51,6 +58,7 @@ color:#999;
 /*나의 메시지*/
 .chat_area .item.mymsg{
 text-align: right;
+transform:translateX(-10px);
 }
 .chat_area .item.item.mymsg .box .msg{
 background-color:#fee600;
@@ -87,9 +95,23 @@ color:#999;
 .wrap{
 border:0;
 width: auto;
+font-size:15px;
 }
+/*html,body,.wrap{
+height:100%;
+}
+.chat_area{
+height:calc(100% - 80px);
+}
+* 밑에거가 안되면*/
 .chat_area{
 height:calc(100vh - 80px);
 box-sizing: border-box;
+}
+.chat_area .item .box .time{
+font-size:13px;
+}
+.input_area input[type="text"]{
+font-size:15px;
 }
 }
