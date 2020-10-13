@@ -83,3 +83,13 @@ margin-bottom:5px;
 .input_area input[type="text"]::placeholder{
 color:#999;
 }
+@media all and (max-width:640px){
+.wrap{
+border:0;
+width: auto;
+}
+.chat_area{
+height:calc(100vh - 80px);
+box-sizing: border-box;
+}
+}
