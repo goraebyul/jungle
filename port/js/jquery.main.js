@@ -482,12 +482,11 @@ $(function(){
       dateFormat: "yy-mm-dd",
       minDate:"-10M",
       maxDate: "+1Y"
-      
-    })
+    }).attr('readonly', 'readonly');
     $("#birthDay").datepicker({
       dateFormat: "yy-mm-dd",
       yearRange: "2007:2020"
-    })
+    }).attr('readonly', 'readonly');
     $(".cal_print > p").css("display","none");
     $(".input_btn").click(function(){
       $(".cal_print > p").css("display","block");
