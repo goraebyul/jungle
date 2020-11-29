@@ -239,6 +239,7 @@ $(function(){
         yearSuffix: '년',
         constrainInput: true,
         disabled:true,
+        ignoreReadonly: true,
         showOtherMonths: true,
       });
         $("#Datepicker,#Datepicker1,#Datepicker2,#Datepicker3,#Datepicker4").datepicker({
