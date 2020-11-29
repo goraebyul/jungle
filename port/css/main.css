@@ -523,8 +523,8 @@ border-right: 20px solid transparent;
 .contact_area .inner .cs_center strong{color:#f15a23; font-size:3em; font-weight:400;}
 .contact_area .inner .cs_center p{padding-top:10px; font-size:13px; line-height:16px; color:#666;}
 .contact_area .inner .sns{padding:0 40px 35px 40px;}
-.sns > ul > li{display:inline-block; cursor:pointer; width:28px; height:31px; line-height:31px; font-size:0; background:url(../img/icon.png); background-position-y:-124px;}
-.sns > ul > li:nth-child(2){background-position-x:-28px;}
+.sns > ul > li{display:inline-block; cursor:pointer; width:28px; height:31px; line-height:31px; font-size:0; background:url(../img/ico_main_facebook.png);}
+.sns > ul > li:nth-child(2){background:url(../img/icon.png); background-position:-28px -124px;}
 .sns > ul > li:nth-child(3){background-position-x:-56px;}
 .sns > ul > li:last-child{background-position-x:-84px;}
 .sns > ul > li+li{margin-left:10px;}
