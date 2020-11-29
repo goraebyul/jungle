@@ -238,17 +238,23 @@ $(function(){
         showMonthAfterYear: true,
         yearSuffix: '년',
         constrainInput: true,
+        disabled:true,
         showOtherMonths: true,
-        // yearRange: "2020:2023"
-         //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
       });
-      $("#Datepicker,#Datepicker1,#Datepicker2,#Datepicker3,#Datepicker4").datepicker({
+        $("#Datepicker,#Datepicker1,#Datepicker2,#Datepicker3,#Datepicker4").datepicker({
         minDate:"-10M",
-        maxDate: "+1Y"
-      });  
+        maxDate: "+1Y",
+        beforeShow: function() {
+          setTimeout(function(){
+              $('.ui-datepicker').css('z-index', 7);
+          }, 0);
+        }
+      });
       //현재날짜 출력
       $( "#Datepicker,#Datepicker1,#Datepicker2,#Datepicker3,#Datepicker4").datepicker('setDate', 'today');
 })
+
+
 /*탭1 인원수 어른클릭*/
 $(function(){
  var adult_val = $("#adult_val").text();
@@ -462,66 +468,57 @@ $(function(){
   })
  })
 
- /*나이계산기 창*/
- $(function() {
-  $(".age_cal a").click(function(){
-    $("#modal").fadeIn();
-    $(".modal_close, .button_area > button").click(function(){
-      $("#modal").hide();
+  /*나이계산기 창*/
+  $(function() {
+    $(".age_cal a").click(function(){
+      $("#modal").fadeIn()
+      $(".modal_close, .button_area > button").click(function(){
+        $("#modal").hide();
+      })
+    })
+
+    $("#boardDate").datepicker({
+      dateFormat: "yy-mm-dd",
+      minDate:"-10M",
+      maxDate: "+1Y"
+      
+    })
+    $("#birthDay").datepicker({
+      dateFormat: "yy-mm-dd",
+      yearRange: "2007:2020"
+    })
+    $(".cal_print > p").css("display","none");
+    $(".input_btn").click(function(){
+      $(".cal_print > p").css("display","block");
+      var birthDay = $("#birthDay").val();
+      var boardDate = $("#boardDate").val();
+      var d1 = new Date(birthDay);
+      var d2 = new Date(boardDate);
+      $("#Date").text(boardDate);
+  
+      var diff = d2.getTime() - d1.getTime();
+      var daysPast = Math.floor(diff / (1000 * 60 * 60 * 24));
+      $("#Days").text(daysPast);
+  
+      var adult ="성인"
+      var kids = "소아"
+      var baby = "유아"
+
+      if(daysPast<=730){
+        $("#kids_age").text(baby)
+        $("#kids_age2").text(baby)
+      }else if(daysPast>730 && daysPast<=4382){
+        $("#kids_age").text(kids)
+        $("#kids_age2").text(kids)
+      }else if(daysPast>4383 && daysPast<=4748){
+        $("#kids_age").text(kids)
+        $("#kids_age2").text(adult)
+      }else if(daysPast>=4749){
+        $("#kids_age").text(adult)
+        $("#kids_age2").text(adult)
+      }
+        else{
+        return false;
+      }
     })
   })
- })
- /*나이계산 숫자입력 금지*/
- function checkNumber(event) {
-  if(event.key === '.' 
-     || event.key === '-'
-     || event.key >= 0 && event.key <= 9) {
-    return true;
-    }
-  return false;
-  }
-$(function(){
-  $("#boardDate").datepicker({
-    dateFormat: "yy-mm-dd",
-    minDate:"-10M",
-    maxDate: "+1Y"
-  })
-  $("#birthday").datepicker({
-    dateFormat: "yy-mm-dd",
-    yearRange: "2007:2020"
-  })
-  // $( "#boardDate, #birthday").datepicker('setDate', 'today')
-  $(".cal_print > p").css("display","none");
-  $(".input_btn").click(function(){
-    $(".cal_print > p").css("display","block");
-    var birthday = $("#birthday").val();
-    var boardDate = $("#boardDate").val();
-    var d1 = new Date(birthday);
-    var d2 = new Date(boardDate);
-    $("#Date").text(boardDate);
-
-    var diff = d2.getTime() - d1.getTime();
-    var daysPast = Math.floor(diff / (1000 * 60 * 60 * 24));
-    $("#Days").text(daysPast);
-
-    var adult ="성인"
-    var kids = "소아"
-    var baby = "유아"
-    if(daysPast<=730){
-      $("#kids_age").text(baby)
-      $("#kids_age2").text(baby)
-    }else if(daysPast>730 && daysPast<=4382){
-      $("#kids_age").text(kids)
-      $("#kids_age2").text(kids)
-    }else if(daysPast>4383 && daysPast<=4748){
-      $("#kids_age").text(kids)
-      $("#kids_age2").text(adult)
-    }else if(daysPast>=4749){
-      $("#kids_age").text(adult)
-      $("#kids_age2").text(adult)
-    }
-      else{
-      return false;
-    }
-  })
-})

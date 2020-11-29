@@ -262,7 +262,7 @@ background-position-x:-27px;
  top:0;
  left:0;
  /* transform:translate(-50%,-50%); */
- z-index:5;
+ z-index:11;
  display: none;
 }
 #modal .modal_close{

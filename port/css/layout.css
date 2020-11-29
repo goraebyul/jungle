@@ -1,7 +1,6 @@
 /********common*********/
 .inner{max-width:1200px; height:auto; margin:0 auto;}
 .inner::after{content:''; display:block; clear:both;}
-img{image-rendering: auto; image-rendering: crisp-edges; image-rendering: pixelated;}
 /********header*********/
 #gnbmenu{width:100%; line-height:40px; height:40px;}
 #gnbmenu .inner > ul > li{float:left; position:relative; margin:0 8px;}
@@ -35,8 +34,8 @@ img{image-rendering: auto; image-rendering: crisp-edges; image-rendering: pixela
 .menu_list .mobile_close,
 .menu_list .search,
 .menu_list .login_menu{display:none;}/*모바일에 보여짐*/
-#mainmenu.fixed{position: fixed; left: 0; top: 0; width: 100%; z-index:4; box-shadow:0px 0px 1px rgba(0,0,0,0.8)}
-#mainmenu{position: absolute; top:40px; background:#fff; width:100%; height:82px; transition:height 0.4s; z-index:4;}
+#mainmenu.fixed{position: fixed; left: 0; top: 0; width: 100%; z-index:8; box-shadow:0px 0px 1px rgba(0,0,0,0.8)}
+#mainmenu{position: absolute; top:40px; background:#fff; width:100%; height:82px; transition:height 0.4s; z-index:8;}
 #mainmenu .inner .logo{float:left; width:20%;}
 #mainmenu .logo h1 a{display:block; width:220px; height:43px; margin-top:16px; font-size:0px; background-image:url(../img/icon.png); background-position-x:0;}
 #mainmenu .inner .menu_list{float:right;}
