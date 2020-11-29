@@ -239,18 +239,18 @@ $(function(){
         yearSuffix: '년',
         constrainInput: true,
         disabled:true,
-        ignoreReadonly: true,
         showOtherMonths: true,
       });
         $("#Datepicker,#Datepicker1,#Datepicker2,#Datepicker3,#Datepicker4").datepicker({
         minDate:"-10M",
         maxDate: "+1Y",
+        ignoreReadonly: true,
         beforeShow: function() {
           setTimeout(function(){
               $('.ui-datepicker').css('z-index', 7);
           }, 0);
         }
-      });
+      }).attr('readonly', 'readonly');
       //현재날짜 출력
       $( "#Datepicker,#Datepicker1,#Datepicker2,#Datepicker3,#Datepicker4").datepicker('setDate', 'today');
 })
