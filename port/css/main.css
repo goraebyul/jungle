@@ -523,6 +523,13 @@ border-right: 20px solid transparent;
 .contact_area .inner .cs_center strong{color:#f15a23; font-size:3em; font-weight:400;}
 .contact_area .inner .cs_center p{padding-top:10px; font-size:13px; line-height:16px; color:#666;}
 .contact_area .inner .sns{padding:0 40px 35px 40px;}
+img[src$=".gif"], img[src$=".png"] {
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
 .sns > ul > li{display:inline-block; cursor:pointer; width:28px; height:31px; line-height:31px; font-size:0; background:url(../img/icon.png); background-position-y:-124px;}
 .sns > ul > li:nth-child(2){background-position-x:-28px;}
 .sns > ul > li:nth-child(3){background-position-x:-56px;}
