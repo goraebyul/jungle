@@ -11,7 +11,7 @@
 #gnbmenu .inner > ul > li.select_area button{height:26px; line-height:26px; text-align:left; padding-left:6px; position: relative; background:#fff; border:1px solid #cfcfcf; font-weight: 600;}
 #gnbmenu .inner > ul > li.select_area button::after{content:''; position: absolute; top: 6px; right: 8px; width: 8px; height: 8px; border: 2px solid; border-color: transparent transparent #555555 #555555; transform: rotate(-45deg);}
 #gnbmenu .inner > ul > li.select_area.active button::after{top:11px;transform: rotate(-225deg);}
-#gnbmenu .inner > ul > li.select_area ul{position: absolute; top: 31px; background:#fff; border: 1px solid #cfcfcf; text-align:center; z-index: 5;}
+#gnbmenu .inner > ul > li.select_area ul{position: absolute; top: 31px; background:#fff; border: 1px solid #cfcfcf; text-align:center; z-index: 12;}
 #gnbmenu .inner > ul > li.select_area ul > li:hover{background:#dedede; cursor: pointer;}
 /********left_gnb*********/
 #gnbmenu .inner .left_gnb{float: left;}
