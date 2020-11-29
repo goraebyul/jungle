@@ -97,6 +97,18 @@ border:0;
 width: auto;
 font-size:15px;
 }
+/*노트9 문제
+.wrap{
+border:0;
+width: auto;
+font-size:15px;
+padding-bottom:75px;
+}
+,chat-area{
+height:100%;
+box-sizing:border-box;
+}
+*/
 /*html,body,.wrap{
 height:100%;
 }
