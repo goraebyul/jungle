@@ -962,6 +962,10 @@ float:none;
 }
 .jeju_flight .inner .group_reserve > a{padding:0;}
 }
+/********jeju_service********/
+.jeju_service .inner > ul > li::before {
+    top: 6px;
+}
 @media screen and (max-width:375px){
 /********jeju_visual********/
 .jeju_visual .visual_txt {
@@ -1067,9 +1071,7 @@ float:none;
     width: 33.3%;
     padding: 0 10px;
 }
-.jeju_service .inner > ul > li::before {
-    top: 6px;
-}
+
 .jeju_service .inner > ul > li img {
     max-width: 63px;
     height: 69px;

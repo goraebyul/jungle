@@ -195,8 +195,8 @@ section h3{font-size:18px;}
 footer ul > li::after{top: 2px;}
 .logo_top .company_menu > ul > li{line-height: 12px;}
 }
-@media screen and (max-width:375px){
-.menu_list .mobile_close{left: 10%;}
+@media screen and (max-width:414px){
+.menu_list .mobile_close{left:10%;}
 }
 @media screen and (max-width:360px){
 .menu_list .mobile_close{left:8%;}
