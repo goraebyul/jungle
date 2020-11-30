@@ -962,6 +962,9 @@ float:none;
 }
 .jeju_flight .inner .group_reserve > a{padding:0;}
 }
+/*나이계산기*/
+#modal .modal_con .cal_con .cal_input label{margin-right:14px;}
+#modal .modal_con .cal_con .cal_input .board_txt{margin-right:28px !important;}
 /********jeju_service********/
 .jeju_service .inner > ul > li::before {
     top: 6px;
