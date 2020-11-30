@@ -18,11 +18,11 @@
 }
 .jeju_visual .bx-wrapper .bx-prev {
     background:url(../img/icon.png);
-    background-position:-65px -195px;
+    background-position-y:-122px;
 }
 .jeju_visual .bx-wrapper .bx-next {
     background:url(../img/icon.png);
-    background-position:-96px -195px;
+    background-position:-30px -122px;
 }
 .jeju_visual .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
     position: absolute;
@@ -50,32 +50,30 @@
 .jeju_visual .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
     left: 53.5%;
     width: 40px;
-    bottom: 24px;
+    bottom: 23px;
     z-index:3;
 }
 .jeju_visual .bx-wrapper .bx-controls-auto .bx-stop {
     width: 20px;
     height: 19px;
     outline: 0;
-    background: url(../img/icon.png) no-repeat;
-    background-position:-145px -220px;
+    background: url(../img/ico_paluse.svg) no-repeat;
 }
 .jeju_visual .bx-wrapper .bx-controls-auto .bx-stop:hover, 
 .jeju_visual .bx-wrapper .bx-controls-auto .bx-stop.active, 
 .jeju_visual .bx-wrapper .bx-controls-auto .bx-stop:focus {
-    background-position-x: -165px;
+    background: url(../img/ico_paluse_hover.svg) no-repeat;
 }
 .jeju_visual .bx-wrapper .bx-controls-auto .bx-start {
-    width: 17px;
-    height: 18px;
+    width: 20px;
+    height: 19px;
     outline: 0;
-    background: url(../img/icon.png) no-repeat;
-    background-position: -145px -195px;
+    background: url(../img/ico_play.svg) no-repeat;
 }
 .jeju_visual .bx-wrapper .bx-controls-auto .bx-start:hover,
 .jeju_visual .bx-wrapper .bx-controls-auto .bx-strat.active,
 .jeju_visual .bx-wrapper .bx-controls-auto .bx-strat:focus{
-    background-position-x:-165px;
+    background: url(../img/ico_play_hover.svg) no-repeat;
 }
 .jeju_visual .bx-wrapper img {
     height: 460px;
@@ -186,52 +184,59 @@
     }
 }
 @media screen and (max-width:480px){
+    .jeju_visual .bx-wrapper {
+        max-width: 480px !important;
+    }
+    .jeju_visual .bx-wrapper .bx-viewport ul > li {
+        max-width: 480px !important;
+    }
     .jeju_visual .bx-wrapper img {
-        width:100%;
-        height: 100%;
-
+        height:184px;
+    }
+    .jeju_visual .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+        width: 97%;
     }
     .jeju_visual .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
-        left: 63%;
+        left: 61%;
     }
 }
 @media screen and (max-width:414px){
+    .jeju_visual .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+        left: 62%;
+    }
+    .jeju_visual .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+        width: 95%;
+    }
+}
+@media screen and (max-width:375px){
+    .jeju_visual .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+        left: 64%;
+    }
+}
+@media screen and (max-width:360px){
     .jeju_visual .bx-wrapper {
-        max-width: 540px !important;
+        max-width: 472px !important;
     }
     .jeju_visual .bx-wrapper .bx-viewport ul > li {
-        max-width: 540px !important;
+        max-width: 472px !important;
+    }
+    .jeju_visual .bx-wrapper img {
+        height:175px;
     }
     .jeju_visual .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
         left: 65%;
     }
 }
-@media screen and (max-width:375px){
+@media screen and (max-width:320px){
+    .jeju_visual .bx-wrapper img {
+        height:165px;
+    }
     .jeju_visual .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
         left: 67%;
     }
 }
-@media screen and (max-width:360px){
-    .jeju_visual .bx-wrapper {
-        max-width: 480px !important;
-    }
-    .jeju_visual .bx-wrapper .bx-viewport ul > li {
-        max-width: 480px !important;
-    }
-}
-@media screen and (max-width:320px){
-    .jeju_visual .bx-wrapper {
-        max-width: 414px !important;
-    }
-    .jeju_visual .bx-wrapper .bx-viewport ul > li {
-        max-width: 414px !important;
-    }
-    .jeju_visual .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
-        left: 70%;
-    }
-}
 @media screen and (max-width:280px){
-    .jeju_visual .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
-        left: 71%;
+    .jeju_visual .bx-wrapper img {
+        height:156px;
     }
 }

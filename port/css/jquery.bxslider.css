@@ -91,7 +91,7 @@ ul.bxslider {
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
   left: 10px;
-  background: url('../img/icon.png') no-repeat 0 -155px;
+  background: url('../img/icon.png') no-repeat -94px -90px;
 }
 /* .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus {
@@ -99,7 +99,7 @@ ul.bxslider {
 } */
 .bx-wrapper .bx-next {
   right: 10px;
-  background: url('../img/icon.png') no-repeat -33px -155px;
+  background: url('../img/icon.png') no-repeat -127px -90px;
 }
 /* .bx-wrapper .bx-next:hover,
 .bx-wrapper .bx-next:focus {
