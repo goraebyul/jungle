@@ -498,6 +498,7 @@ $(function(){
       $("#Date").text(boardDate);
   
       var diff = d2.getTime() - d1.getTime();
+      console.log(diff)
       var daysPast = Math.floor(diff / (1000 * 60 * 60 * 24));
       $("#Days").text(daysPast);
   
