@@ -12,9 +12,22 @@ top:22%;
 left:5%;
 width:340px;
 height:202px;
+opacity: 0;
+margin-left:40px;
 color:#fff;
 background:url(../img/bg_main_visual_txt.png);
 padding:30px 10px 5px 10px;
+}
+.jeju_visual .visual .bx-wrapper ul > li.active .visual_txt{
+animation: moveUp .5s forwards;
+}
+@keyframes moveUp{
+ from{
+     opacity: 0; margin-left:40px;
+ }
+ to{
+     opacity: 1; margin-left:0;
+ }
 }
 .jeju_visual .visual_txt h1,
 .jeju_visual .visual_txt p,
@@ -35,6 +48,7 @@ font-weight:300;
 .jeju_visual .visual_txt p:last-child{
 font-size:16px;
 }
+
 /********jeju_flight********/
 .jeju_flight .inner{height:auto; position: relative; background:#f15a23;}
 .jeju_flight .inner .flight_tabs{
@@ -208,12 +222,11 @@ line-height:48px; padding:0 10px; cursor: pointer;}
 .area_name.destination .desti_tabs > li.current::after{
 content:''; float:right; padding-right:10px;
 position: absolute;
-top: 16px;
+top: 17px;
 right: 8px;
 width:8px;
 height:15px;
-background:url(../img/icon.png);
-background-position:-27px -92px;
+background:url(../img/area_name_btn.svg) no-repeat;
 }
 .area_name > .name_container,
 .area_name.destination .desti_list{float:right; width:60%; 
@@ -540,8 +553,6 @@ border-right: 20px solid transparent;
 .partner button{padding-top:10px; background:transparent;}
 .partner button a{font-size:13px; color:#0992c1; font-weight:bold; letter-spacing: -0.5px;}
 .partner button a:before{content:'★'; display:inline-block; margin-right:5px; font-size:13px; position: relative; top:-2px; z-index:-1;}
-@media screen and (max-width:1440px){
-}
 @media screen and (max-width:1280px){
 /********jeju_flight********/
 /*tab1 왕복*/
@@ -969,6 +980,11 @@ float:none;
 .jeju_service .inner > ul > li::before {
     top: 6px;
 }
+@media screen and (max-width:390px){
+.tab_content .trip_box .area_name {
+    left:-12px;
+}
+}
 @media screen and (max-width:375px){
 /********jeju_visual********/
 .jeju_visual .visual_txt {
@@ -990,6 +1006,7 @@ float:none;
 .tab_content .trip_box .area_name {
     width: 24em;
     padding:12px;
+    left:0;
 }
 .area_name .area_tabs, 
 .area_name.destination .desti_tabs {

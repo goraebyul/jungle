@@ -14,8 +14,10 @@ $(function(){
     stopAutoOnclick:true,
     onSliderLoad: function(currentIndex){
         slide_resize();
+        // console.log($(".visual .bx-wrapper ul > li").text(currentIndex));
         $(".visual .bx-wrapper ul > li").eq(currentIndex+1).addClass("active")
-    },onSlideAfter:function($slideElement){
+    }
+    ,onSlideAfter:function($slideElement){
         $slideElement.addClass("active").siblings().removeClass("active")
     }
     });
